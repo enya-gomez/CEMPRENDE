@@ -1,0 +1,265 @@
+
+footer{
+	position: relative;
+	background-color: #0d345f;
+	/*margin-top: 260px;*/
+    padding: 30px 0 0 0;
+    border-top: 5px solid #ffffff;
+}
+
+footer ul{
+	list-style: none; margin: 0; padding: 0;
+}
+footer a{
+	color: #abbacb;
+}
+footer a:hover{
+	color: #ddd; text-decoration: none;
+}
+
+/* Area Enlaces */
+footer .enlaces{ font-size: 13px;
+}
+footer .enlaces h3{
+	margin: 15px 0; font-size: 17px; font-weight: 700; text-transform: uppercase;
+}
+footer .enlaces .row div:first-child h3{
+	border-top: 1px solid #404c59; padding-top: 15px;
+}
+footer .enlaces h3 a{ display: block; color: #fff; background: url(../multimedia/iconos/pie/cruz.png) no-repeat center right;
+}
+footer .enlaces ul{ list-style: none; padding-bottom: 15px;
+}
+footer .enlaces li{ margin-bottom: 5px;
+}
+footer .enlaces div div div{
+	border-bottom: 1px solid #404c59;
+}
+
+/* Área Redes */
+footer .redes{ color: #abbacb; font-weight: 700; margin-top: 30px;
+}
+
+footer .linkBuzon a {position: relative;display: block;background: #e32726 url(https://unapec.edu.do/media/3776/icn-buzon-2.png) no-repeat 92% center;margin-bottom: 20px;padding: 15px 30px;border-radius: 2px;font-size: 16px;color: #fff;text-transform: uppercase;box-shadow: 1px 1px 2px 1px rgb(0 0 0 / 30%);}
+
+footer .linkRadio{ margin:0 0 7px 0; font-size: 14px; text-transform: uppercase;
+}
+footer .linkRadio p{ position: relative; display: inline-block; padding: 0 45px 0 0; margin: 0;
+}
+footer .linkRadio a{ width: 32px; height: 29px; background: url("../multimedia/iconos/pie/radio.png") no-repeat right center; background-size: 32px 29px; position: absolute; bottom: 0; right: 0; opacity: 0.6;
+}
+footer .linkRadio a:hover{ opacity: 1;
+}
+footer .linkRedes{ margin:7px 0; padding: 6px 45px 6px 0; font-size: 14px; text-transform: uppercase;
+}
+footer .linkRedes li{ float:left; margin: 10px 5px 5px 5px; width: 38px; height: 38px; opacity: 0.6;
+}
+footer .linkRedes p{ position: relative; display: inline-block; margin: 0;
+}
+footer .linkRedes a{ display: block; width: 38px; height: 38px; opacity: 0.6; background-size: 38px 38px;
+}
+footer .linkRedes a:hover{ opacity: 1;
+}
+
+
+/* Area Logo */
+footer .logo .barra{ background: #202d3a; margin: 25px 0px 0 0px; padding: 25px 0; text-align: center;
+}
+footer .logo ul{ font-size: 12px; font-weight: 700; margin-top: 15px;
+}
+footer .logo li:first-child{ border-top: 1px solid #404c59;
+}
+footer .logo li{ border-bottom: 1px solid #404c59;
+}
+footer .logo li a{ display: inline-block; padding: 15px 0;
+}
+footer .logo .barra a{ opacity: 0.8;
+}
+footer .logo img{ width: 70%; height: auto; max-width: 300px;
+}
+footer .direccion{ display: block; font-size: 11px; font-weight: 600; color: #abbacb; margin-top: 20px;
+}
+
+/**/
+.RDincluye{ display: flex; justify-content: center; padding-top: 30px;
+}
+
+.RDincluye p{ 
+	align-self: center; 
+	background: url("../multimedia/logos/logo-RDincluye.png") no-repeat center 10px; 
+	background-size: 100px; 
+	width: 110px; 
+	height: 100px; 
+	border-radius: 3px; 
+	transition: 0.5s ease-in-out;
+}
+
+.RDincluye p:hover{ background-color: #fff; background-position: center -155px !important;
+}
+
+@media(min-width:768px){
+	footer .collapse{ display: block !important;
+	}
+	footer .enlaces h3 a{ background:none;
+	}
+}
+
+@media(min-width:992px){
+	
+	footer{ padding-top: 50px; padding-bottom: 50px;
+	}
+	/* Área Logo */
+	footer .logo{ display: flex; flex-direction: column; border-right: 2px solid #abbacb;
+	}
+	footer .logo .barra{ background: none; margin:inherit; text-align: left; order: 1; padding-top: 0;
+	}
+	footer .logo ul{ font-size: 12px; font-weight: 700; margin-top: 0; padding: 0; order: 2;
+	}
+	footer .logo .barra a{ opacity: 0.8;
+	}
+	footer .logo img{ width: 200px; height: auto;
+	}
+	footer .direccion{ order: 3; padding: 0;
+	}
+	
+	/* Área Redes*/
+	footer .redes{ margin-top: 0;
+	}
+	footer .linkRadio span, footer .linkRedes span{
+		display: block; line-height: 120%; font-size: 13px;
+	}
+	footer .linkRedes{ margin-bottom: 0; padding-bottom: 0;
+	}
+	footer .linkRedes ul{ margin-top: -10px;
+	}
+	footer .linkRedes li{ margin-top: 0; padding-top: 0;
+	}
+    footer .linkBuzon a{ max-width: 400px; font-size: 14px; padding: 15px 15px;
+	}
+		
+	/* Area Enlaces */
+	footer .enlaces h3{ font-size: 13px; margin-top: 0;
+	}
+	footer .enlaces .row div:first-child h3{ border: none; padding-top: 0;
+	}
+	footer .enlaces div div div{ border-bottom:none;
+	}
+    
+    /* Area Logo */
+    footer .logo ul{ font-size: 12px; font-weight: 700; margin-top: 0;
+    }
+    footer .logo li{ border:none !important;
+    }
+    footer .logo li a{ padding: 2px 0;
+    }
+    footer .logo .barra a{ opacity: 0.8;
+    }
+    footer .logo img{ width: 100%; height: auto;
+    }
+    footer .direccion{ display: block; font-size: 11px; font-weight: 600; color: #abbacb; margin-top: 20px;
+    }
+    .RDincluye{ padding-top: 0;
+    }
+    .RDincluye p{ background-size: 130px; width: 170px; height: 130px;
+    }
+}
+
+@media(min-width:1300px){
+	/* Área Logo */
+	footer .logo{
+		max-width: 370px;
+	}
+	footer .logo img{ width: 284px; height: auto;
+	}
+	footer .logo ul{	
+	}
+	/* Redes */
+	footer .redes{
+		padding-left: 50px;
+	}
+	/* Enlaces */
+	footer .enlaces{
+	}
+    footer .RDincluye{ justify-content:flex-start;
+    }
+}
+
+@media(min-width:1700px){
+	footer .linkBuzon a{ font-size: 16px; padding: 15px 30px;
+	}
+}
+
+
+footer .menuPie {position: absolute;width: 100%;height: 157px;background: #0c3765 url("../multimedia/bg/bg-info.jpg") center no-repeat;background-size: cover;top: -162px;color: #ccd8e6;font-size: 19px;text-transform: uppercase;font-weight: 600;}
+
+@media (max-width: 1199px){
+	footer .menuPie {font-size: 15px;}
+}
+
+
+@media (max-width: 992px){
+	footer .menuPie {font-size: 12px;}
+}
+
+@media (max-width: 768px){
+	footer .menuPie {font-size: 13px;}
+}
+
+
+footer .menuPie .container-fluid, footer .menuPie .row {height: 100%;}
+
+@media (max-width: 1600px){
+	footer .menuPie .container-fluid, footer .menuPie .row {height: 100%;}
+}
+
+
+@media (max-width: 992px){
+	footer .menuPie .container-fluid, footer .menuPie .row {height: 100%;}
+}
+
+@media (max-width: 768px){
+	.portada .container-fluid.relleno {padding: 0 120px;}
+}
+
+
+.menuPie .colIzq, .menuPie .colDer {justify-content: space-between;}
+
+@media (max-width: 992px){
+	.menuPie .colIzq, .menuPie .colDer {justify-content: flex-start;}
+}
+
+@media (max-width: 768px){
+	.menuPie .colIzq, .menuPie .colDer {justify-content: flex-start;}
+}
+
+
+.menuPie ul {display: flex;align-items: center;}
+
+@media (max-width: 992px){
+	.menuPie ul {display: flex;}
+}
+
+@media (max-width: 768px){
+	.menuPie ul {display: flex;align-items: baseline;flex-direction: column;justify-content: space-around;}
+}
+
+
+@media (max-width: 992px){
+	.menuPie ul li {margin: 0 30px 0 0;}
+}
+
+@media (max-width: 768px){
+	.menuPie ul li {margin: 0 30px 0 0;}
+}
+
+.menuPie ul li {margin: 0 30px 0 0;}
+
+@media (max-width: 992px){
+	footer .menuPie a {color: #ccd8e6;}
+}
+
+@media (max-width: 768px){
+	footer .menuPie a {color: #ccd8e6;}
+}
+
+footer .menuPie a {color: #ccd8e6;}

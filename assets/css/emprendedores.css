@@ -1,0 +1,179 @@
+/*
+Navegación:
+
+01 - NUESTROS EMPRENDEDORES
+	1.1 - TITULO
+	1.2 - CARRUSEL
+02 - INTERNA
+	2.1 - ITEM
+	2.2 - TEXT
+03 - LITY
+
+*/
+
+/*----------------------------*/
+/*-- NUESTROS EMPRENDEDORES --*/
+/*----------------------------*/
+
+#nuestros_emprendedores{margin-top: 2rem;}
+
+#nuestros_emprendedores .contenedor{display: flex;}
+
+@media(max-width: 992.98px){
+	#nuestros_emprendedores .contenedor{flex-direction: column;margin: 1rem;}
+}
+
+/* TITULO */
+
+#nuestros_emprendedores .texto{ background-color: #004E9C;color: #FFF;position: relative;padding: 1.5rem 2rem 1.5rem 18.5%;max-width: 35%;flex: 0 0 35%;height: 100%;margin-right: 19px;}
+
+@media(max-width: 1799.98px){
+	#nuestros_emprendedores .texto{ padding-left: 12%;}
+}
+
+@media(max-width: 1499.98px){
+	#nuestros_emprendedores .texto{ padding-left: 13%;}
+}
+
+@media(max-width: 1399.98px){
+	#nuestros_emprendedores .texto{ padding: 2.75rem 2rem;max-width: 35%;flex: 0 0 35%;}
+}
+
+@media(max-width: 992.98px){
+	#nuestros_emprendedores .texto{ padding: 2.75rem 2rem;max-width: 100%;flex: 0 0 100%;text-align: center;margin: 3rem 0 1rem;}
+}
+
+@media(max-width: 767.98px){
+	#nuestros_emprendedores .texto{ padding: 1rem 0.5rem;}
+}
+
+#nuestros_emprendedores h1.encab{ font-size: 32px;margin: 10px 0 35px;}
+
+@media(max-width: 767.98px){
+	#nuestros_emprendedores h1.encab{ font-size: 30px;}
+}
+
+@media( max-width: 576.98px ){
+	#nuestros_emprendedores h1.encab{font-size: 20px;}
+}
+
+#nuestros_emprendedores h1.encab::after{ content: none;}
+
+#nuestros_emprendedores .texto a{font-size: 14px;color: rgba(255,255,255,0.7);text-transform: uppercase;}
+
+#nuestros_emprendedores .texto a:hover{ color: #FFFFFF;text-decoration: none;}
+
+
+/*-- CARRUSEL --*/
+
+
+.carruselEquipos{position: relative;max-width: 65%;}
+
+@media(max-width: 992.98px){
+	.carruselEquipos{max-width: 100%;}
+}
+
+/* ITEM */
+
+.carruselEquipos .item{padding: 0;height: 320px;overflow-y: hidden;border: 1px solid #ABBACB;}
+
+.carruselEquipos .item a {position: relative;display: flex;height: 100%;width: 100%;}
+
+.carruselEquipos .item a::after {content: '';position: absolute;width: 100%;height: 100%;background: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.3) 100%);right: 0;}
+
+
+
+.carruselEquipos .item img {width: 100%;height: auto;object-fit: cover;}
+
+
+.carruselEquipos .item .detalles {position: absolute;z-index: 1;padding: 1rem;bottom: -12rem;transition-duration: 0.2s;}
+
+
+.carruselEquipos  .item:hover .detalles {position: absolute;background-color: #ffffff;transform: translateY(-165px);}
+
+
+.carruselEquipos .item .detalles small{color: #FFF;text-transform: uppercase;font-size: 14px;}
+
+.carruselEquipos .item:hover small, 
+.carruselEquipos .item:hover .detalles p {color: #637185;overflow-y: auto;}
+
+.carruselEquipos .item .detalles h2{font-size: 20px;color: #fff;margin: 0;padding-bottom: 12px;border-bottom: 7px solid #EDA330;background-image: none;}
+
+.carruselEquipos .item:hover h2 {color: #252525;}
+
+.carruselEquipos .item .detalles p {margin-top: 15px;color: transparent;height: 160px;overflow: hidden;
+}
+
+/* ARROW */
+
+.carruselEquipos .glide__arrows{position: absolute;left: -130px;bottom: 77px;
+}
+
+
+@media(max-width:1399.98px){
+	.carruselEquipos .glide__arrows{bottom: 30px;}
+}
+
+@media(max-width:992.98px){
+	.carruselEquipos .glide__arrows{position: relative;left: 0;bottom: 0;}
+}
+
+
+.carruselEquipos .glide__arrow{text-indent: -2000px;overflow: hidden;min-width: 45px;min-height: 35px;border: none;border-radius: 0;background-color: transparent;background-position: center;background-repeat: no-repeat;opacity: 0.6;transition-duration: 0.2s;
+}
+
+.carruselEquipos .glide__arrow:hover{opacity: 0.8;}
+
+.carruselEquipos .glide__arrow:focus{opacity: 1;border: none;border-radius: 0;outline: none;}
+
+.carruselEquipos .glide__arrows .glide__arrow--left{background-image: url("../multimedia/iconos/flechas/flecha-carrusel-anterior.svg");}
+
+.carruselEquipos .glide__arrows .glide__arrow--right{background-image: url("../multimedia/iconos/flechas/flecha-carrusel-siguiente.svg");}
+
+/*-------------*/
+/*-- INTERNA --*/
+/*-------------*/
+
+.cuerpo.interna #nuestros_emprendedores{margin-top: 0;}
+
+.cuerpo.interna #nuestros_emprendedores #contenedorInformacion{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;}
+
+@media( max-width: 1099.98px){
+	.cuerpo.interna #nuestros_emprendedores #contenedorInformacion{justify-content: space-between;}}
+
+.cuerpo.interna .destacado{display: flex;justify-content: space-between;flex-wrap: wrap;}
+/* ITEM */
+
+.cuerpo.interna #nuestros_emprendedores .item{width: 30%;flex: 0 0 30%;padding: 0;height: 320px;overflow-y: hidden;margin-bottom: 2rem;border: 1px solid #ABBACB;}
+
+@media( min-width: 1099.98px){
+	.cuerpo.interna #nuestros_emprendedores .item{margin: 0 1.66% 40px;}}
+
+@media( max-width: 1099.98px){
+	.cuerpo.interna #nuestros_emprendedores .item{width: 49%;flex: 0 0 49%;}
+}
+
+@media( max-width: 767.98px){
+	.cuerpo.interna #nuestros_emprendedores .item{width: 100%;flex: 0 0100%;}
+}
+.cuerpo.interna #nuestros_emprendedores .item::after{content: '';position: absolute;width: 100%;height: 100%;background: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.3) 100%);right: 0;}
+
+.cuerpo.interna #nuestros_emprendedores .item img{width: 100%;height: 320px;object-fit: cover;}
+
+/* TEXTO */
+
+.cuerpo.interna #nuestros_emprendedores .item .detalles{position: absolute;z-index: 1;padding: 1rem;top: auto;bottom: -12.5rem;background-color: transparent;transition-duration: 0.2s;}
+
+.cuerpo.interna #nuestros_emprendedores .item:hover .detalles{position: absolute;z-index: 1;padding: 1rem;top: 0;bottom: 0;background-color: #ffffff;}
+
+.cuerpo.interna #nuestros_emprendedores .item small{color: #FFF;text-transform: uppercase;font-size: 14px;}
+
+
+.cuerpo.interna #nuestros_emprendedores .item h2{color: #fff;margin: 0;border-bottom: 7px solid #EDA330;background-image: none;}
+
+.cuerpo.interna #nuestros_emprendedores .item p{margin-top: 15px;opacity: 0;height: 160px;overflow: hidden;transition-duration: 0.2s;}
+
+.cuerpo.interna #nuestros_emprendedores .item:hover h2{color: #252525;}
+
+.cuerpo.interna #nuestros_emprendedores .item:hover small, .cuerpo.interna #nuestros_emprendedores .item:hover p{color: #637185;overflow-y: auto;opacity: 1;}
+

@@ -1,0 +1,358 @@
+/*
+ESTILO GENERAL
+
+Navegación:
+01 - CUERPO
+02 - COLORES
+03 - TIPOGRAFIA
+	3.1 - Titulos
+	3.2 - Parrafos
+	3.2 - Enlaces
+	3.2 - Redes sociales
+	3.3 - Informacion colapsada
+04 - BOTONES
+05 - FORMULARIO
+06 - PAGINACION
+07 - TABS
+08 - IMAGENES
+*/
+
+/*----------------*/
+/*---- CUERPO ----*/
+/*----------------*/
+
+html, body{ height: 100%; margin: 0; padding: 32px 0 0 0;}
+
+@media(min-width:992.98px){html, body{padding: 0;}}
+
+html{scroll-behavior: smooth;scroll-padding-top: 8rem;}
+
+
+body, .cuerpo{overflow-x: hidden;font-family: "Open Sans";}
+
+
+.contenido {padding-bottom: 100px;}
+
+@media(max-width:767.98px){
+	.cuerpo .container-fluid{ width: 90%;}
+	
+	.contenido{ padding-bottom: 100px;}
+}
+
+@media(min-width:767.98px){
+	.cuerpo .container-fluid{ width: 750px;}
+	
+	.contenido{ padding-bottom: 100px;}
+}
+
+@media(min-width:992.98px){
+	.cuerpo .container-fluid{ width: 974px;}
+	
+    .container-fluid.wprPeninsula .bloque-peninsula{ margin-left: -500px; padding-left: 500px; margin-right: -80px; padding-right: 80px;}
+	
+    /*bloque-peninsula con imagen*/
+    .container-fluid.wprPeninsula.imagen{ max-width: 100% !important;}
+	
+    .container-fluid.wprPeninsula.imagen .bloque-peninsula{ margin-left: 0; padding-left: 0;}
+	
+    .container-fluid.wprPeninsula.imagen.relleno{ width: 100% !important; padding-left: 0 !important;}
+	
+}
+
+@media(min-width:1199.98px){
+	.container-fluid{ max-width: 1420px;}
+	
+	.cuerpo .container-fluid{ width: 1190px;}
+	
+    .cuerpo .relleno{ padding-left: 80px; padding-right:80px;}
+	
+}
+
+@media(min-width:1599.98px){
+	.container-fluid{ max-width: 1560px;}
+	
+	.cuerpo .container-fluid{ width: 1530px;}
+	
+	.cuerpo .relleno{ padding-left: 150px; padding-right: 150px;}
+	
+    .container-fluid.wprPeninsula .bloque-peninsula{ margin-left: -500px; padding-left: 500px; margin-right: -150px; padding-right: 150px;}
+	
+}
+
+/*-----------------*/
+/*---- COLORES ----*/
+/*-----------------*/
+.bg-color-1{ background-color:#0058a6 !important; }
+.bg-color-2{ background-color:#0d345f !important; }
+.bg-color-3{ background-color:#e39e26 !important; }
+.bg-color-4{ background-color:#e32726 !important; }
+.bg-color-5{ background-color:#2d3740 !important; }
+.bg-color-6{ background-color:#637185 !important; }
+.bg-color-7{ background-color:#eaedf1 !important; }
+
+/*--------------------*/
+/*---- TIPOGRAFIA ----*/
+/*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;600;800&display=swap');
+
+/*---- Titulos ----*/
+
+h1, h2, h3, h4, h5, h6{ font-weight: 600; margin: 30px 0;}
+
+.contenido h1, .contenido h2, .contenido h3, .contenido h4, .contenido h5{margin: 2rem 0;}
+
+@media(min-width:992px){
+	.cuerpo h1:first-child, .cuerpo h2:first-child, .cuerpo h3:first-child{ margin-top: 0;}
+}
+
+h2{font-weight: 700;text-transform: uppercase;font-size: 1.5rem;margin-bottom: 20px;}
+
+/* Encabezados */
+h1.encab{margin-bottom: 2.75rem;}
+
+.cuerpo .encab{font-size:30px;text-transform: uppercase;font-weight: 300;}
+
+.cuerpo .encab span {font-weight: 700;}
+
+@media(min-width: 992.98px){
+    .cuerpo .encab{font-size:40px;}
+}
+
+@media(max-width: 567.98px){
+    .cuerpo .encab{font-size:24px;}
+}
+
+.cuerpo .encab::after{content: '.';color: transparent;position: relative;border-bottom: 6px solid #EDA330;display: flex;width: 0px;height: 0;left: 0;margin-top: 15px;}
+
+.cuerpo .encab[data-scroll="in"]::after {width: 65px;transition-duration: 0.4s;transition-delay: 0.2s;}
+
+.cuerpo .encab span {font-weight: 700;}
+
+/*---- Parrafos ----*/
+
+p{color: #637185;}
+
+@media(max-width: 299.98px){
+	li, a, p{font-size: 11px;}
+}
+
+/*---- Listas ----*/
+ul{ padding-left: 20px;}
+
+/*---- Enlaces ----*/
+a {text-decoration: none;}
+
+.leer-mas {text-align: center !important;}
+
+.leer-mas a{font-size: 1rem;font-weight: 800;color: #929292;}
+
+.enlace{display: inline-block; color: #0058a6; background: url(../multimedia/iconos/icn-enlace-ancla.png) no-repeat center left;padding-left: 30px;margin: 30px 0; font-weight: 700;}
+
+/*---- Redes sociales ----*/
+.linkRedes li a{display: block;width: 100%;height: 100%;background-size: cover;}
+
+/* blanco */
+
+.linkRedes .facebook a{background-image: url("../multimedia/iconos/redes/facebook.png")}
+.linkRedes .messenger a{background-image: url("../multimedia/iconos/redes/messenger.png")}
+.linkRedes .twitter a{background-image: url("../multimedia/iconos/redes/twitter.png")}
+.linkRedes .instagram a{background-image: url("../multimedia/iconos/redes/instagram.png")}
+.linkRedes .whatsapp a{background-image: url("../multimedia/iconos/redes/whatsapp.png")}
+.linkRedes .telegram a{background-image: url("../multimedia/iconos/redes/telegram.png")}
+.linkRedes .linkedin a{background-image: url("../multimedia/iconos/redes/linkedin.png")}
+.linkRedes .youtube a{background-image: url("../multimedia/iconos/redes/youtube.png")}
+.linkRedes .tiktok a{background-image: url("../multimedia/iconos/redes/tiktok.png")}
+.linkRedes .behance a{background-image: url("../multimedia/iconos/redes/behance.png")}
+.linkRedes .github a{background-image: url("../multimedia/iconos/redes/github.png")}
+.linkRedes .email a{background-image: url("../multimedia/iconos/redes/email.png")}
+.linkRedes .copiar a{background-image: url("../multimedia/iconos/redes/copiar.png")}
+
+/* color */
+.linkRedes.color .facebook a{background-image: url("../multimedia/iconos/redes/facebook-color.png")}
+.linkRedes.color .messenger a{background-image: url("../multimedia/iconos/redes/messenger-color.png")}
+.linkRedes.color .twitter a{background-image: url("../multimedia/iconos/redes/twitter-color.png")}
+.linkRedes.color .instagram a{background-image: url("../multimedia/iconos/redes/instagram-color.png")}
+.linkRedes.color .whatsapp a{background-image: url("../multimedia/iconos/redes/whatsapp-color.png")}
+.linkRedes.color .telegram a{background-image: url("../multimedia/iconos/redes/telegram-color.png")}
+.linkRedes.color .linkedin a{background-image: url("../multimedia/iconos/redes/linkedin-color.png")}
+.linkRedes.color .youtube a{background-image: url("../multimedia/iconos/redes/youtube-color.png")}
+.linkRedes.color .tiktok a{background-image: url("../multimedia/iconos/redes/tiktok-color.png")}
+.linkRedes.color .behance a{background-image: url("../multimedia/iconos/redes/behance-color.png")}
+.linkRedes.color .github a{background-image: url("../multimedia/iconos/redes/github-color.png")}
+.linkRedes.color .email a{background-image: url("../multimedia/iconos/redes/email-color.png")}
+.linkRedes.color .copiar a{background-image: url("../multimedia/iconos/redes/copiar-color.png")}
+
+/* texto */
+
+.linkRedes.texto li a{background-size: contain;background-repeat: no-repeat;background-position: center;}
+
+.linkRedes.texto .facebook a{background-image: url("../multimedia/iconos/redes/facebook-texto.png")}
+.linkRedes.texto .messenger a{background-image: url("../multimedia/iconos/redes/messenger-texto.png")}
+.linkRedes.texto .twitter a{background-image: url("../multimedia/iconos/redes/twitter-texto.png")}
+.linkRedes.texto .instagram a{background-image: url("../multimedia/iconos/redes/instagram-texto.png")}
+.linkRedes.texto .whatsapp a{background-image: url("../multimedia/iconos/redes/whatsapp-texto.png")}
+.linkRedes.texto .telegram a{background-image: url("../multimedia/iconos/redes/telegram-texto.png")}
+.linkRedes.texto .linkedin a{background-image: url("../multimedia/iconos/redes/linkedin-texto.png")}
+.linkRedes.texto .youtube a{background-image: url("../multimedia/iconos/redes/youtube-texto.png")}
+.linkRedes.texto .tiktok a{background-image: url("../multimedia/iconos/redes/tiktok-texto.png")}
+.linkRedes.texto .behance a{background-image: url("../multimedia/iconos/redes/behance-texto.png")}
+.linkRedes.texto .github a{background-image: url("../multimedia/iconos/redes/github-texto.png")}
+.linkRedes.texto .email a{background-image: url("../multimedia/iconos/redes/email-texto.png")}
+.linkRedes.texto .copiar a{background-image: url("../multimedia/iconos/redes/copiar-texto.png")}
+
+
+/*---- Informacion colapsada ----*/
+.informacionColpaso{margin-top: 2rem;}
+
+.informacionColpaso h2{font-size: 18px;color: #077ee8;margin: 1rem 0 0 0;padding: 20px 0 15px!important;border-bottom: 1px solid #dadde2;background-image: url(../multimedia/iconos/menos.svg);background-position: right top;background-size: contain;background-repeat: no-repeat;}
+
+.informacionColpaso h2[aria-expanded="false"] {background-image: url(../multimedia/iconos/mas.svg);}
+
+.informacionColpaso .info {background-color: #f2f4f6;}
+
+.informacionColpaso .info p {padding: 2rem;min-height: 125px;color: #737374;margin-bottom: 0 !important;}
+
+/*-----------------*/
+/*---- BOTONES ----*/
+/*-----------------*/
+
+.btn{border-width: 4px;min-width: 150px;padding: 10px 20px;}
+
+.btn-principal{color: #FFFFFF;background-color: #EDA330;border-color: #EDA330;}
+
+.btn-principal:hover{color: #EDA330;background-color: #FFFFFF;border-color: #FFFFFF;}
+
+/* Cuerpo */
+.contenido .btn-principal:hover, .cuerpo .btn-principal:hover{color: #FFFFFF;background-color: #004E9C;border-color: #004E9C;}
+
+.btn-secundario{background-color: transparent;border-color: #637185;color: #637185;min-width: 200px;}
+
+.btn-secundario.text-white{border-color: #FFFFFF;}
+
+.btn-secundario.text-white:hover, .cuerpo .ad .btn:hover{color: #EDA330!important;background-color: #FFFFFF;border-color: #FFFFFF;}
+
+.btn-deslizar{text-indent: -2000px;background-image: url(../multimedia/iconos/flechas/flecha-abajo.svg);background-repeat: no-repeat;background-position: center;background-color: #FFF;background-size: 25px;border: 0;position: absolute;min-width: 60px;height: 60px;border-radius: 52%;z-index: 1;box-shadow: -1px 2px 5px 0px rgb(0 0 0 / 29%);bottom: -40px;right: 45%;}
+
+.close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus{border: none;outline: none;box-shadow: none;}
+
+/*--------------------*/
+/*---- FORMULARIO ----*/
+/*--------------------*/
+
+input, button, select, optgroup, textarea{padding: 12px 14px;text-transform: uppercase;font-weight: 700;font-size: 13px;color: rgba(99,113,133,0.6);border: 2px solid #d7dbe0;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+
+input:focus-visible, button:focus-visible, select:focus-visible, optgroup:focus-visible, textarea:focus-visible{border: 2px solid #00a3ed;outline: none;color: #637185;box-shadow: 0px 0px 5px 0px rgb(3 169 244 / 52%);}
+
+#filtro{min-width: 270px;background: #fff url("../multimedia/iconos/flechas/flecha-seleccion.svg") no-repeat right 0.75rem center;display: inline-block;vertical-align: middle;border-radius: 4px;background-size: 8px 10px;}
+
+@media(max-width: 576.98px){
+	#filtro{min-width: 100%;margin-bottom: 2rem;}
+}
+
+label{display: inline-block;margin-bottom: 0.5rem;font-weight: 800;font-size: 14px;}
+
+.form-check-label{font-weight: 400;top: -3px;position: relative;}
+
+.form-control, .form-select {height: 50px;font-size: 14px;text-transform: none;font-weight: 500;border-radius: 0;border: 1px solid #DADADA;color: #252525;margin-bottom: 15px;}
+
+.form-control::placeholder, select.form-select:required:invalid {color: #69788C !important;}
+
+.form-select option:first-child{display: none;}
+
+.form-select option[value=""][disabled]{font-weight: 800;}
+
+.form-select option {font-weight: 400;color: #252525;}
+
+.form-control[type="file"]{height: auto;padding: 0;margin: 25px 0 0;border-color: #e9ecef;color: #adadad;}
+
+.form-control::-webkit-file-upload-button {background-color: #e9ecef;border: 0;margin: 0 10px 0 0;padding: 10px 15px;cursor: pointer;color: #637185;text-transform: uppercase;font-size: 13px;font-weight: 700;letter-spacing: 0.45px;display: inline-block;text-align: center;}
+
+form .row h2{flex: 0 0 100%;max-width: 100%;padding-left: 15px;}
+
+form .row p{flex: 0 0 100%;max-width: 100%;padding-left: 15px;margin-top: -10px;}
+
+form hr{margin: 20px 0 30px;}
+
+form small.advertencia{margin-top: -10px;position: absolute;}
+
+option{color: #898e93;font-size: 13px;font-weight: 700;}
+
+option:focus, option:hover{color: #898e93;background-color: #D8DCE8;}
+
+/*-------------------*/
+/*---- PAGINACION----*/
+/*-------------------*/
+
+.pagination {position: relative;max-width: 456.98px;margin: auto;}
+
+.pagination button{width: 45px;height: 45px;font-size: 1rem;padding: 1px 0 0;margin: auto 10px;color: #637185;background-color: transparent;border: 2px solid #637185;border-radius: 50rem;transition-duration: 0.15s;}
+
+.pagination button:hover{border-width: 4px;background-size: 26px;  }
+
+.pagination button.page:active{color: #FFFFFF;background-color: #637185;}
+
+.pagination button.first, .pagination button.prev, .pagination button.next, .pagination button.last{text-indent: -2000px;overflow: hidden;background-repeat: no-repeat;background-position: center;background-size: 28px;}
+
+.pagination button.first{background-image: url("../multimedia/iconos/flechas/flecha-paginacion-primero.svg");}
+
+.pagination button.prev{background-image: url("../multimedia/iconos/flechas/flecha-carrusel-anterior.svg");}
+
+.pagination button.next{background-image: url("../multimedia/iconos/flechas/flecha-carrusel-siguiente.svg");}
+
+.pagination button.last{background-image: url("../multimedia/iconos/flechas/flecha-paginacion-ultimo.svg");}
+
+
+/*-------------*/
+/*---- TABS ---*/
+/*-------------*/
+
+.tab {overflow: hidden;}
+
+.tab button {background-color: inherit;float: left;border: none;cursor: pointer;padding: 16px 40px;transition: 0.3s;font-size: 15px;text-transform: inherit;position: relative;font-weight: 500;color: #787878;}
+
+.tab button:hover {background-color: #ddd;}
+
+.tab button.active {border: 1px solid #dadde2;border-bottom: 1px solid #fff;background-color: #ffffff;z-index: 1;font-weight: 700;color: #333333;}
+
+.tab button:focus {border: 1px solid #00a3ed;border-bottom: none;box-shadow: 0px 0px 5px 0px rgb(3 169 244 / 52%);outline: none;}
+
+.tabInvestigaciones {display: none;padding-top: 50px;}
+
+/*------------------*/
+/*---- IMAGENES ----*/
+/*------------------*/
+
+img {width: 100%;height: 100%;object-fit: cover;}
+
+img[src="#"]:empty, img[src=""]:empty{background-color: #eaedf1;background-image: url(../multimedia/img/image-default.jpg);background-size: cover;background-position: center;}
+
+
+/*------------------------*/
+/*---- CALL TO ACTION ----*/
+/*------------------------*/
+
+.cuerpo .ad{background-color: #eda330;min-height: 200px;padding: 2rem;margin-top: 3rem;border-radius: 0.25rem;}
+
+.cuerpo .ad p{font-size: 16px;font-weight: 400;text-align: center;color: #FFFFFF}
+
+.cuerpo .ad .btn{width: 100%;border-color: #FFFFFF;}
+
+.cuerpo .ad.alert{position: fixed;width: 100%;max-width: 285px;right: 35px;top: 25%;z-index: 9991;box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 25%);-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 10s both;animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 10s both;transition-delay: 10s;
+}
+
+.cuerpo .ad.alert button.close {padding: 0;background-color: transparent;border: 0;-webkit-appearance: none;right: 12px;top: 9px;position: absolute;}
+
+ /* ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------*/
+ 
+@-webkit-keyframes slide-in-right {
+  0% {-webkit-transform: translateX(1000px);transform: translateX(1000px);opacity: 0;}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);opacity: 1;}
+}
+
+@keyframes slide-in-right {
+  0% {-webkit-transform: translateX(1000px);transform: translateX(1000px);opacity: 0;}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);opacity: 1;}
+}
+

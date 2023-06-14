@@ -1,0 +1,88 @@
+
+.secBanner{ background: url(../img/en-construccion/bnr-no-encontrada.jpg) center bottom; background-size: cover; height: 100px;
+}
+
+/* CUERPO */
+body{ background-color: #deeafa;
+}
+
+.wprAfiche img{ display: none;
+}
+/**/
+.cuerpo .contenido{ position: relative; z-index: 999; padding-bottom: 0;
+}
+.cuerpo .container-fluid{ position: relative; z-index: 999;
+}
+.cuerpo .titulo{ font-size: 25px; color: #fff; background-color: #2d3740; padding: 10px 15px; 
+}
+.regresar{ position: absolute; top: -40px; right: 15px; background: #e39e26 url(../img/general/flecha-izq.png) no-repeat 10px 12px; color: #fff; font-size: 17px; font-weight: 700; text-transform: uppercase; padding: 8px 20px 8px 30px;
+}
+.regresar:hover{ color:#fff; text-decoration: none; background-color: #e32726;
+}
+.info p{ padding: 20px; background: #fff;
+}
+
+@media(min-width:992px){
+	.secBanner{ height: 402px; border-bottom: 46px solid #1875f0;
+	}
+	div.order-lg-last{ margin-left: -50px; z-index: 9;
+	}
+	.cuerpo .container-fluid{ padding-top: 0px; padding-bottom: 80px;
+	}
+	.wprAfiche img{ display: block; width: 100%;
+	}
+	.regresar{ position: absolute; top: -40px; right: 0px;
+	}
+	.cuerpo .titulo{ width: 422px; padding: 10px 35px; font-size: 30px; font-weight: 300; line-height: 40px; word-wrap: break-word; margin-top: -46px;
+	}
+	.cuerpo .titulo span{ text-transform: uppercase; font-size: 38px; font-weight: 600;
+	}
+	.wprAfiche{ margin-top: -200px; /*box-shadow: 0px 0 10px 5px rgba(0,0,0,.25);*/
+	}
+	.regresar{ position: absolute; top: -86px; right: -15px;
+	}
+	.contenido .row div+div{ padding-left: 30px;
+	}
+	.contenido .info{ background: none;
+	}
+	.info p{ margin: 15px 0 20px 50px; padding: 0 0 0 10px; font-size: 18px; background: none; color: #444; line-height: 120%; font-weight: 600;
+	}
+	
+}
+@media(min-width:1200px){
+	div.order-lg-last{ margin-left: -110px;
+	}	
+	.cuerpo .titulo{ width: 530px; line-height: 57px; font-size: 35px;
+	}
+	.cuerpo .titulo span{ font-size: 57px;
+	}
+	.info p{ margin: 30px 0 20px 120px; font-size: 22px;
+	}
+}
+@media(min-width:1600px){
+	.cuerpo .titulo{ width: 630px;
+	}
+	.cuerpo .titulo span{ font-size: 64px; display: block;
+	}
+	.info p{ margin: 40px 0 20px 30px;
+	}
+}
+
+.btns li{ float: left; list-style: none; margin-right: 10px;
+}
+.btns a{ display: block; padding: 10px 15px 10px 42px; color: #fff;
+}
+.btns a.reportar{ background: #1875f0 url(../img/en-construccion/icn-i.png) 15px center no-repeat;
+}
+.btns a.inicio{ background: #1875f0 url(../img/en-construccion/icn-home.png) 15px center no-repeat;
+}
+
+
+
+
+
+
+
+
+
+

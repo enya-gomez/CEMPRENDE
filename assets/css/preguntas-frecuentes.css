@@ -1,0 +1,14 @@
+
+/*-- PREGUNTAS FRECUENTES --*/
+
+#preguntas.contenido{margin-top: 120px;}
+
+#preguntas .informacionColpaso{display: list-item;text-align: -webkit-match-parent;list-style: decimal-leading-zero;margin-left: 3rem;width: 100%;}
+
+#preguntas .informacionColpaso h3{font-size: 16px;text-transform: inherit !important;color: #454d59;margin: 1rem 2rem 0 0;padding: 20px 0 15px!important;background-image: url(../multimedia/iconos/menos.svg);background-position: right top;background-size: contain;background-repeat: no-repeat;}
+
+#preguntas .informacionColpaso::marker{font-weight: 900;color: #eda331;font-size: 25px;}
+
+#preguntas .informacionColpaso h3[aria-expanded="false"] {background-image: url(../multimedia/iconos/mas.svg);border-bottom: 1px solid #f2f4f6;}
+
+#preguntas .informacionColpaso .info {margin-left: -3rem;}
