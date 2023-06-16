@@ -94,7 +94,7 @@ footer .direccion{ display: block; font-size: 11px; font-weight: 600; color: #ab
 	transition: 0.5s ease-in-out;
 }
 
-.RDincluye p:hover{ background-color: #fff; background-position: center -155px !important;
+.RDincluye p:hover{ background-color: #fff; background-position: center -125px !important;
 }
 
 @media(min-width:768px){
