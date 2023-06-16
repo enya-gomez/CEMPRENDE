@@ -90,10 +90,12 @@ body, .cuerpo{overflow-x: hidden;font-family: "Open Sans";}
 .bg-color-6{ background-color:#637185 !important; }
 .bg-color-7{ background-color:#eaedf1 !important; }
 
+
 /*--------------------*/
 /*---- TIPOGRAFIA ----*/
 /*--------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
 
 /*---- Titulos ----*/
 
